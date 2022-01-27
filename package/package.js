@@ -16,7 +16,7 @@ app.get('/packages', (req, res) => {
 
 app.post('/packages', async (req, res) => {
     const packageID = randomBytes(5).toString('hex');
-    //const { num } = req.body;
+    //const { num } = req.body; -- Wenn der Numerator getestet werden soll
         if (num <= 1000) {
             const { paketname } = req.body;
 
